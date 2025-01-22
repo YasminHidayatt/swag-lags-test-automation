@@ -26,7 +26,7 @@ Feature: Dashboard
     And user should see title "Product" on Dashboard Page
     And user should see button filter on Dashboard Page
     When user could choose filter by "Name (A to Z)" in dropdown filter on Dashboard Page
-    Then user should see product name after filter by asc on Dashboard Page
+    Then user should see product name after filter by asc on Dashboard Pag
 
   @TC10
   Scenario: Verify user could be filter product by desc on Dashboard Page
