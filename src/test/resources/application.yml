@@ -1,0 +1,33 @@
+account.service:
+  user1:
+    userName: standard_user
+    password: secret_sauce
+  user2:
+    userName: locked_out_user
+    password: secret_sauce
+  user3:
+    userName: problem_user
+    password: secret_sauce
+  user4:
+    userName: performance_glitch_user
+    password: secret_sauce
+  user5:
+    userName: error_user
+    password: secret_sauce
+  user6:
+    userName: visual_user
+    password: secret_sauce
+
+data.product:
+  product1:
+    productName: Sauce Labs Backpack
+    price: 29.99
+  product2:
+    productName: Sauce Labs Bike Light
+    price: 9.99
+  product3:
+    productName: Sauce Labs Bolt T-Shirt
+    price: 15.99
+  product4:
+    productName: Sauce Labs Fleece Jacket
+    price: 49.99
