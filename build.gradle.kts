@@ -17,17 +17,17 @@ dependencies {
     testImplementation ("org.testng","testng","6.14.3")
     testImplementation(platform("org.junit:junit-bom:5.7.2"))
     testImplementation("org.junit.jupiter:junit-jupiter")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
     implementation("org.seleniumhq.selenium","selenium-java","4.0.0")
     implementation("org.seleniumhq.selenium", "selenium-api", "4.0.0")
     implementation("org.seleniumhq.selenium","selenium-remote-driver","4.0.0")
     implementation("org.seleniumhq.selenium","selenium-support","4.0.0")
     implementation("org.seleniumhq.selenium","selenium-ie-driver","4.0.0")
     implementation("io.github.bonigarcia","webdrivermanager","3.8.1")
-//    implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
     implementation("io.cucumber:cucumber-java:7.1.0")
-    testImplementation("io.cucumber:cucumber-junit:6.10.4")
-    implementation("io.cucumber","cucumber-testng","6.10.4")
-    implementation("io.cucumber", "cucumber-spring","6.10.4")
+    testImplementation("io.cucumber:cucumber-junit:7.1.0")
+    implementation("io.cucumber","cucumber-testng","7.1.0")
+    implementation("io.cucumber", "cucumber-spring","7.1.0")
     implementation("com.aventstack:extentreports:5.0.9")
     implementation("tech.grasshopper:extentreports-cucumber7-adapter:1.10.1")
     implementation("net.masterthought:maven-cucumber-reporting:5.7.8")
@@ -42,18 +42,25 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
-tasks.withType<Test> {
-    // Menyederhanakan classpath agar lebih kompatibel
-    doFirst {
-        systemProperty("java.class.path", files(sourceSets.test.get().output,
-                configurations.runtimeClasspath.get()).asPath)
+configurations {
+    testImplementation {
+        extendsFrom(configurations.testRuntimeOnly.get())
     }
 }
 
-tasks.register<Jar>("fatJar") {
-    manifest {
-        attributes["Main-Class"] = "com.swaglags.automation.Cucumber_runner"
-    }
-    from(sourceSets.main.get().output)
-    from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
+tasks.register<JavaExec>("Cucumber_runner") {
+    mainClass.set("io.cucumber.core.cli.Main")
+    classpath = sourceSets["test"].runtimeClasspath
+    args = listOf(
+            "--glue", "com.swaglags.automation.steps",
+            "--plugin", "pretty",
+            "--plugin", "io.cucumber.core.plugin.DefaultSummaryPrinter",
+            "--plugin", "json:build/reports/cucumber.json",
+            "src/test/resources/features"
+    )
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
+    systemProperty("java.util.logging.config.file", "src/test/resources/logging.properties")
 }

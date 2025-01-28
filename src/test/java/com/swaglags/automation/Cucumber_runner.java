@@ -1,16 +1,12 @@
 package com.swaglags.automation;
 
-
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.spring.CucumberContextConfiguration;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
 
-
-@CucumberContextConfiguration
 @CucumberOptions(
-    glue = {"com.swaglags.automation"},
+    glue = {"com.swaglags.automation.steps"},
     features = {"src/test/resources/features"},
     plugin = {"json:build/cucumber1.json", "pretty"},
     stepNotifications = true,
@@ -21,10 +17,16 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 public class Cucumber_runner extends AbstractTestNGCucumberTests {
   @BeforeClass
   public static void beforeClass() {
-
+    // Initialization code if needed
   }
-  @AfterClass
-  public static void afterClass(){
 
+  @Override
+  public Object[][] scenarios() {
+    return super.scenarios();
+  }
+
+  @AfterClass
+  public static void afterClass() {
+    // Cleanup code if needed
   }
 }
