@@ -12,6 +12,7 @@ public class DashboardPage extends BasePageObject implements DashboardLocator {
 
   public Boolean isDisplayedHeaderPage(){
     try {
+      waitUntilPresent(LABEL_TITLE_HEADER);
       return isDisplayed(LABEL_TITLE_HEADER);
     } catch (Exception e){
       return false;
@@ -32,8 +33,9 @@ public class DashboardPage extends BasePageObject implements DashboardLocator {
         .map(WebElement::isDisplayed).collect(Collectors.toList());
   }
 
-  public Float getProductPrice(){
-    return dollarNormalizer(LABEL_PRODUCT_PRICE);
+  public String getProductPrice(){
+    waitUntilPresent(LABEL_PRODUCT_PRICE);
+    return findAllElement(LABEL_PRODUCT_PRICE).get(0).getText();
   }
 
   public String getSubTile(){
@@ -71,5 +73,9 @@ public class DashboardPage extends BasePageObject implements DashboardLocator {
 
   public void clickProduct(){
     findAllElement(LABEL_PRODUCT_NAME).get(0).click();
+  }
+
+  public Float getProductPriceToFloat(){
+    return dollarNormalizer(getProductPrice());
   }
 }

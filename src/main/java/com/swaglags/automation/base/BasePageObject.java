@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.time.Duration;
 import static com.swaglags.automation.controller.BrowserController.driver;
 
 public class BasePageObject {
@@ -39,12 +40,12 @@ public class BasePageObject {
     return getDriver().findElements(locator);
   }
 
-  public void waitUntilPresent(By locator){
-    WebDriverWait wait = new WebDriverWait(driver, 15);
-    wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+  public void waitUntilPresent(By locator) {
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+    wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
   }
 
-  public Float dollarNormalizer(By locator){
-    return Float.parseFloat(getText(locator).replace("$",""));
+  public Float dollarNormalizer(String amount){
+    return Float.parseFloat(amount.replace("$","").trim());
   }
 }

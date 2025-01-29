@@ -13,9 +13,12 @@ public class BrowserController {
   public void setUp() {
     WebDriverManager.firefoxdriver().setup();
     driver = new FirefoxDriver();
-    driver.get("https://www.saucedemo.com/");
+    try {
+      driver.get("https://www.saucedemo.com/");
+    } catch (Exception e) {
+      driver.get("https://www.saucedemo.com/");
+    }
   }
-
   @After
   public void tearDown() {
     if (driver != null) {

@@ -6,7 +6,7 @@ public interface DashboardLocator {
   By LABEL_TITLE_HEADER = By.xpath("//div[text()='Swag Labs']");
   By ICON_CART  = By.xpath("//a[@data-test='shopping-cart-link']");
   By BUTTON_MENU = By.xpath("//button[@type='button']");
-  By LABEL_PRODUCT_NAME = By.xpath(" //div[@data-test='inventory-item-name']");
+  By LABEL_PRODUCT_NAME = By.xpath("//div[@data-test='inventory-item-name']");
   By LABEL_PRODUCT_PRICE = By.xpath("//div[@data-test='inventory-item-price']");
   By BUTTON_ATC = By.xpath("//div[@data-test='inventory-item-price']");
   By BUTTON_FILTER = By.xpath("//div[@class='right_component']//span");

@@ -7,13 +7,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.spring.CucumberContextConfiguration;
 import java.util.List;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.Assert;
 
-//@CucumberContextConfiguration
-//@SpringBootTest
+
 public class DashboardSteps extends BaseFactory {
 
   @Given("user on Dashboard Page")
@@ -46,8 +43,10 @@ public class DashboardSteps extends BaseFactory {
   @And("user should see {string} price on Dashboard Page")
   public void userShouldSeePriceOnDashboardPage(String product){
     ProductProperties.Product productData = productProperties.getProduct(product);
-    Assert.assertEquals(productData.getProductPrice(), dashboardPage.getProductPrice());
+    Assert.assertEquals(productData.getProductPrice(), dashboardPage.getProductPriceToFloat());
+    testingData.setProductPrice(productData.getProductPrice());
   }
+
 
   @When("user could be atc product on Dashboard Page")
   public void userCouldBeAtcProductOnDashboardPage(){
@@ -61,7 +60,7 @@ public class DashboardSteps extends BaseFactory {
 
   @When("user could choose filter by {string} in dropdown filter on Dashboard Page")
   public void userCouldChooseFilterByInDropdownFilterOnDashboardPage(String typeFilter){
-//    dashboardPage.clickButtonFiler();
+    dashboardPage.clickButtonFiler();
     dashboardPage.selectFilterByDropDown(typeFilter);
     }
 
@@ -69,7 +68,7 @@ public class DashboardSteps extends BaseFactory {
   public void userShouldSeeProductNameAfterFilterByAscOnDashboardPage(DataTable dataTable){
     List<String> productList = dataTable.asList();
     for (int i = 0; i < productList.size(); i++){
-      Assert.assertEquals(productList.get(i), dashboardPage.getListProductName().get(i));
+      Assert.assertEquals(productList.get(i++), dashboardPage.getListProductName().get(i++));
     }
   }
 

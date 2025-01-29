@@ -1,5 +1,6 @@
 package com.swaglags.automation;
 
+import com.swaglags.automation.data.TestingData;
 import com.swaglags.automation.page.CartPage;
 import com.swaglags.automation.page.DashboardPage;
 import com.swaglags.automation.page.LoginPage;
@@ -21,6 +22,8 @@ public class BaseFactory {
   protected LoginPage loginPage;
   @Autowired
   protected ProductProperties productProperties;
+  @Autowired
+  protected TestingData testingData;
 
 
 }
