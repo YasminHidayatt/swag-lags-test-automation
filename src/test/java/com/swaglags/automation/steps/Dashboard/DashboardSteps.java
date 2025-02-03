@@ -44,7 +44,7 @@ public class DashboardSteps extends BaseFactory {
   public void userShouldSeePriceOnDashboardPage(String product){
     ProductProperties.Product productData = productProperties.getProduct(product);
     Assert.assertEquals(productData.getProductPrice(), dashboardPage.getProductPriceToFloat());
-    testingData.setProductPrice(productData.getProductPrice());
+//    testingData.setProductPrice(productData.getProductPrice());
   }
 
 
@@ -84,7 +84,7 @@ public class DashboardSteps extends BaseFactory {
   public void userShouldSeeProductPriceAfterFilterByPriceOnDashboardPage(DataTable dataTable){
     List<String> listProductPrice = dataTable.asList();
     for (int index = 0; index <listProductPrice.size(); index++){
-      Assert.assertEquals(listProductPrice.get(index++), dashboardPage.getListProductPrice().get(index++));
+      Assert.assertEquals(listProductPrice.get(index), dashboardPage.getListProductPrice().get(index));
     }
   }
 

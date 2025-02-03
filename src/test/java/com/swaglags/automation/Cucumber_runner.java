@@ -8,7 +8,7 @@ import org.junit.BeforeClass;
 @CucumberOptions(
     glue = {"com.swaglags.automation.steps"},
     features = {"src/test/resources/features"},
-    plugin = {"json:build/cucumber1.json", "pretty"},
+    plugin = {"json:build/cucumber.json", "pretty"},
     stepNotifications = true,
     tags = "",
     publish = true
@@ -27,6 +27,5 @@ public class Cucumber_runner extends AbstractTestNGCucumberTests {
 
   @AfterClass
   public static void afterClass() {
-    // Cleanup code if needed
   }
 }

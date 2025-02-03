@@ -64,3 +64,11 @@ tasks.withType<Test> {
     useJUnitPlatform()
     systemProperty("java.util.logging.config.file", "src/test/resources/logging.properties")
 }
+
+cucumberReports {
+    outputDir = file("$buildDir/generated-reports")
+    buildId = System.getenv("BUILD_NUMBER") ?: "local"
+    reports = files("$buildDir/cucumber.json")
+    trends = file("$projectDir/src/test/resources/trends/trends.json")
+    trendsLimit = 10
+}

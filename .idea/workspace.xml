@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a9cb394-1fca-4460-90a7-2160df5b246f" name="Changes" comment="" />
+    <list default="true" id="7a9cb394-1fca-4460-90a7-2160df5b246f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/locator/ProductLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/page/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/steps/Products/ProductSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/web/OrderSummary.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/web/Product.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/BaseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/BaseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/locator/DashboardLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/locator/DashboardLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/locator/OrderSummaryLocator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/locator/OrderSummaryLocator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/page/OrderSummaryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/swaglags/automation/page/OrderSummaryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/Cucumber_runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/Cucumber_runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/steps/Dashboard/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/steps/Dashboard/DashboardSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/steps/OrderrSummary/OrderSummarySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/swaglags/automation/steps/OrderrSummary/OrderSummarySteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,11 +44,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="swag-lags-test-automation" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="swag-lags-test-automation" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -43,14 +54,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="XML Properties File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/E2E" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -65,23 +84,66 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/swag-lags-test-automation&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.startup.tasks&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify user should see list product on Dashboard Page">
-    <configuration name="Scenario: Verify user should see list product on Dashboard Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verify user could be filter product by desc on Dashboard Page">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Login.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user could be filter product by desc on Dashboard Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.test" />
+      <option name="NAME_FILTER" value="^Verify user could be filter product by desc on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user could be filter product by desc on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user could be filter product by desc on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see price product from low to high after apply filter on Dashboard Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
       <option name="GLUE" value="com.swaglags.automation.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="swag-lags-test-automation.test" />
-      <option name="NAME_FILTER" value="^Verify user should see list product on Dashboard Page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see list product on Dashboard Page$&quot;" />
+      <option name="NAME_FILTER" value="^Verify user should see price product from low to high after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see price product from low to high after apply filter on Dashboard Page$&quot;" />
       <shortenClasspath name="MANIFEST" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see list product on Dashboard Page" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see price product from low to high after apply filter on Dashboard Page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -93,16 +155,162 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify user succesfully login with credential standar user on Login page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Login.feature" />
-      <option name="GLUE" value="com.swaglags.automation.steps" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (2)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (3)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (4)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (5)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (6)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (7)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (8)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="swag-lags-test-automation.test" />
-      <option name="NAME_FILTER" value="^Verify user succesfully login with credential standar user on Login page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user succesfully login with credential standar user on Login page$&quot;" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
       <shortenClasspath name="MANIFEST" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify user succesfully login with credential standar user on Login page" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -114,16 +322,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Login.feature" />
-      <option name="GLUE" value="com/swaglags/automation/steps" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/web/Dashboard.feature" />
+      <option name="GLUE" value="com.swaglags.automation.controller com.swaglags.automation.steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="swag-lags-test-automation.test" />
-      <option name="NAME_FILTER" value="^test$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^test$&quot;" />
-      <shortenClasspath name="CLASSPATH_FILE" />
-      <option name="SUGGESTED_NAME" value="Scenario: test" />
+      <module name="swag-lags-test-automation.main" />
+      <option name="NAME_FILTER" value="^Verify user should see product price from High to Low after apply filter on Dashboard Page$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify user should see product price from High to Low after apply filter on Dashboard Page$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -135,18 +343,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="swag-lags-test-automation [init]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Unnamed" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <shortenClasspath name="MANIFEST" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <module name="swag-lags-test-automation.main" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Cucumber_runner" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="init" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.swaglags.automation.Cucumber_runner&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="Cucumber_runner" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,42 +404,44 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="swag-lags-test-automation [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="swag-lags-test-automation.test" />
+      <shortenClasspath name="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="swag-lags-test-automation.main" />
+      <shortenClasspath name="NONE" />
+      <option name="filePath" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Verify user should see list product on Dashboard Page" />
-      <item itemvalue="Cucumber Java.Scenario: Verify user succesfully login with credential standar user on Login page" />
-      <item itemvalue="Cucumber Java.Scenario: test" />
-      <item itemvalue="Gradle.swag-lags-test-automation [init]" />
-      <item itemvalue="Gradle.swag-lags-test-automation [jar]" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (1)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (3)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (4)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (6)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (7)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (8)" />
+      <item itemvalue="Cucumber Java.Unnamed" />
+      <item itemvalue="Cucumber Java.Feature: Login" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (2)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (5)" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user could be filter product by desc on Dashboard Page" />
+      <item itemvalue="Cucumber Java.Scenario: Verify user should see price product from low to high after apply filter on Dashboard Page" />
+      <item itemvalue="Gradle.Cucumber_runner" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Verify user should see list product on Dashboard Page" />
-        <item itemvalue="Cucumber Java.Scenario: Verify user succesfully login with credential standar user on Login page" />
-        <item itemvalue="Cucumber Java.Scenario: test" />
-        <item itemvalue="Gradle.swag-lags-test-automation [jar]" />
-        <item itemvalue="Gradle.swag-lags-test-automation [init]" />
+        <item itemvalue="Cucumber Java.Scenario: Verify user could be filter product by desc on Dashboard Page" />
+        <item itemvalue="Cucumber Java.Scenario: Verify user should see price product from low to high after apply filter on Dashboard Page" />
+        <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (5)" />
+        <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page (2)" />
+        <item itemvalue="Cucumber Java.Scenario: Verify user should see product price from High to Low after apply filter on Dashboard Page" />
       </list>
     </recent_temporary>
   </component>
@@ -206,5 +455,25 @@
       <updated>1737024270638</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/swag_lags_test_automation$Scenario__Verify_user_could_be_filter_product_by_desc_on_Dashboard_Page.ic" NAME="Scenario: Verify user could be filter product by desc on Dashboard Page Coverage Results" MODIFIED="1738210988218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>

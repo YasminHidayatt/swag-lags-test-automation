@@ -27,12 +27,12 @@ Feature: Dashboard
     And user should see button filter on Dashboard Page
     When user could choose filter by "Name (A to Z)" in dropdown filter on Dashboard Page
     Then user should see product name after filter by asc on Dashboard Page
-      | Sauce Labs Backpack               |
       | Sauce Labs Bike Light             |
-      | Sauce Labs Bolt T-Shirt           |
+      | Sauce Labs Backpack               |
       | Sauce Labs Fleece Jacket          |
       | Sauce Labs Onesie                 |
       | Test.allTheThings() T-Shirt (Red) |
+      | Sauce Labs Bolt T-Shirt           |
 
   @TC10
   Scenario: Verify user could be filter product by desc on Dashboard Page
@@ -41,11 +41,11 @@ Feature: Dashboard
     And user should see button filter on Dashboard Page
     When user could choose filter by "Name (Z to A)" in dropdown filter on Dashboard Page
     Then user should see product name after filter by desc on Dashboard Page
-      | Test.allTheThings() T-Shirt (Red) |
       | Sauce Labs Onesie                 |
+      | Test.allTheThings() T-Shirt (Red) |
       | Sauce Labs Fleece Jacket          |
-      | Sauce Labs Bolt T-Shirt           |
       | Sauce Labs Bike Light             |
+      | Sauce Labs Bolt T-Shirt           |
       | Sauce Labs Backpack               |
 
   @TC11
@@ -53,7 +53,7 @@ Feature: Dashboard
     Given user on Dashboard Page
     And user should see title "Products" on Dashboard Page
     And user should see button filter on Dashboard Page
-    When user could choose filter by "Price(low to high)" in dropdown filter on Dashboard Page
+    When user could choose filter by "Price (low to high)" in dropdown filter on Dashboard Page
     Then user should see product price after filter by price on Dashboard Page
       | 7.99  |
       | 9.99  |
@@ -67,7 +67,7 @@ Feature: Dashboard
     Given user on Dashboard Page
     And user should see title "Products" on Dashboard Page
     And user should see button filter on Dashboard Page
-    When user could choose filter by "Price(high to low)" in dropdown filter on Dashboard Page
+    When user could choose filter by "Price (high to low)" in dropdown filter on Dashboard Page
     Then user should see product price after filter by price on Dashboard Page
       | 49.99 |
       | 29.99 |
